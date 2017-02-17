@@ -87,4 +87,11 @@ By formatting the input you can mimic the output. o
 Formatting may help to find the cause of errors more quickly.
 
 
-
+## Minor Document Divisions
+Latex provides the following divisions
+```
+part		- An optional unit that is used for major divisions
+chapter		- A chapter in a book or report
+sections	- A section, subsection, or subsubsection
+paragraphs	- A named paragraph or named subparagrah
+```
