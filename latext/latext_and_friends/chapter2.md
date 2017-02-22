@@ -37,3 +37,53 @@ The second purpose of grouping is that it lets you change certain settings and
 keep the changes local to that group. Inside the group, you may have several
 paragraphs. 
 
+###Diacritics
+
+###Ligatures
+The  ligature combines two or several characters as a special glyph. Examples
+of English ligatures and their equivalent character combinations are fi (fi),
+ff (ff), ffi(ffi), fl (fl), and ffl(ffl)
+
+###Quotation Marks
+
+###Dashes
+
+###Full Stops
+
+###Ellipsis
+
+###Emphasis
+
+###Borderline Punctuation
+
+###Footnotes and Marginal Notes
+
+###Displayed Quotations and Verses
+
+###Line Breaks
+
+###Controlling the Size
+
+\begin{tiny} Example \end{tiny}
+
+\begin{scriptsize} Example \end{scriptsize}
+
+\begin{footnotesize} Example \end{footnotesize}
+
+\begin{small} Example \end{small}
+
+\begin{normalsize} Example \end{normalsize}
+
+\begin{large} Example \end{large}
+
+\begin{Large} Example \end{Large}
+
+\begin{LARGE} Example \end{LARGE}
+
+\begin{huge} Example \end{huge}
+
+\begin{Huge} Example \end{Huge}
+
+
+###Small Caps Letters
+\begin{textsc}{No shouting}\end{textsc}
