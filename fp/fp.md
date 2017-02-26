@@ -106,3 +106,20 @@ of sum, given
 _(foldr f x) Nil = x_
 _(foldr f x)(Cons a l) = f a ((foldr f x)l)_
 
+
+# Gluing programs together
+If _g_ and _f_ are functions then _(g.f)_  is a program that, when applied to
+its input, computes
+
+_g(f input)_
+
+The program _f_ computes its output, which  is used as input to _g_. The two
+programs are run together in strict synchronization. Program _f_ is only
+started when _g_ needs input and stopped when _g_ is done.  (The function _f_
+can run till infinity, but doesn't affect)
+
+This allows termination conditions to be separated from loop bodies. A
+powerful modularization. 
+
+Since this method of evaluation runs _f_ as little as possible, this is called
+__lazy evaluation__ .
