@@ -79,39 +79,49 @@ The elements of a list can be added by a recursive function _sum_. The
 function _sum_ must be defined for two kinds of argument: an empty list (Nil)
 and a Cons. Since the sum of no numbers is zero, definition is
 
-_sum Nil = 0_
+```
+sum Nil = 0
+```
 
 and since the sum of Cons can be calcualted by adding the first element of the
 list to the sum of the others, we can define
 
-_sum (Cons n list) = num + sum list_
+```
+sum (Cons n list) = num + sum list
+```
 
 Examining this definition, we see that only the boxed (not shown here, but
 hightlighted in bold) are
 specific to computing a sum.
-
-_sum Nil = **0**_
-_sum (Cons n list) = n **+** sum list_
+```
+sum Nil = 0
+sum (Cons n list) = n + sum list
+```
 
 This means that the computation of a sum can be modularized by gluing together
 a general recursive pattern and the boxed parts. This recursive pattern is
 conventionally called _foldr_ and so _sum_ can be expressed as
 
-_sum = foldr (+) 0_
-
+```
+sum = foldr (+) 0
+```
 
 The definition of _foldr_ can be derived just by parameterizing the definition
 of sum, given
 
-_(foldr f x) Nil = x_
-_(foldr f x)(Cons a l) = f a ((foldr f x)l)_
+```
+(foldr f x) Nil = x
+(foldr f x)(Cons a l) = f a ((foldr f x)l)
+```
 
 
 # Gluing programs together
 If _g_ and _f_ are functions then _(g.f)_  is a program that, when applied to
 its input, computes
 
-_g(f input)_
+```
+g(f input)
+```
 
 The program _f_ computes its output, which  is used as input to _g_. The two
 programs are run together in strict synchronization. Program _f_ is only
