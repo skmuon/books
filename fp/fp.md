@@ -133,3 +133,13 @@ powerful modularization.
 
 Since this method of evaluation runs _f_ as little as possible, this is called
 __lazy evaluation__ .
+
+# Conclusion
+Modularity is the key to successful programming. Languages that aim to improve
+the productivity should enable moduralrity. Modularity means more than
+modules. To acheive this language should provide good glue. 
+
+Functional Programming provide two kinds or glues.
+
+* Higher order functions
+* Lazy Evaluation
